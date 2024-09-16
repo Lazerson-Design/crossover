@@ -1,0 +1,66 @@
+.about {
+    text-align: center;
+    padding: 40px;
+    background-color: white; 
+    color: #333; /* Text color */
+  }
+  
+  .about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.65;
+    letter-spacing: 0.004em;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.125rem; 
+    margin-bottom: 30px;
+  }
+  
+  .signature {
+    margin-bottom: 40px;
+  }
+  
+  .signature-text {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .stats-wrapper {
+    background-image: url('bg-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stat {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .stat-icon {
+    font-size: 3.3rem; 
+    color: #fff; 
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .stat-label {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
