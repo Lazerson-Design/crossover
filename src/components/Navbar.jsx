@@ -1,5 +1,4 @@
 import React from "react";
-import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -40,14 +39,6 @@ const Navbar = () => {
                   Blog
                 </a>
               </li>
-              <li style={navItemStyles}>
-                <a
-                  href="https://themeforest.net/item/snow-minimal-clean-wordpress-portfolio-theme/19347252?ref=unvab"
-                  style={linkStyles}
-                >
-                  WordPress Theme
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -58,8 +49,8 @@ const Navbar = () => {
 
 // Basic Inline Styles for the Navbar
 const navbarStyles = {
-  position: "absolute",
-  padding: "33px 0",
+  position: "fixed",
+  padding: "20px 0",
   fontSize: ".96rem",
   left: 0,
   top: 0,
@@ -67,25 +58,30 @@ const navbarStyles = {
   zIndex: 1000,
   fontFamily: "'Arial', Work Sans, sans-serif",
   fontWeight: "bold",
+  backgroundColor: "#fff",
+  alignItems: "center",
+  justifyContent: "space-between",
+  display: "flex",
 };
 
 const containerStyles = {
   paddingRight: "15px",
   paddingLeft: "15px",
-  marginLeft: "auto",
-  marginRight: "auto",
-
-  maxwidth: "100%",
-};
-
-const navTableStyles = {
-  display: "table",
-  hight: "100%",
+  marginLeft: 20,
+  marginRight: 20,
+  maxWidth: "1140px", // Adjust width as needed
   width: "100%",
 };
 
+const navTableStyles = {
+  display: "flex", // Flexbox to arrange logo and nav list
+  width: "100%",
+  alignItems: "center",
+  justifyContent: "space-between",
+};
+
 const logoStyles = {
-  cursor: "Pointer",
+  cursor: "pointer",
   width: "85px",
   borderStyle: "none",
   boxSizing: "inherit",
@@ -98,7 +94,7 @@ const navListStyles = {
   display: "flex",
   gap: "2rem",
   margin: 0,
-  paddingRight: "20px",
+  padding: 0,
 };
 
 const navItemStyles = {
