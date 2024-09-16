@@ -1,0 +1,72 @@
+/* Pseudo-elements */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* Style for ::selection (applies to selected text) */
+::selection {
+  color: #fff;
+  background-color: #444;
+}
+
+/* Adding a ::before pseudo-element for the nav */
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Example */
+  z-index: -1; /* Place it behind the nav */
+}
+
+/* Adding a ::after pseudo-element for the nav */
+nav::after {
+  content: "";
+  position: "absolute";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #000; /* Example border */
+}
+
+/* container widths */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
