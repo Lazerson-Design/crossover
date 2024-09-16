@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
+
 function App() {
   return (
     <div className="App">
